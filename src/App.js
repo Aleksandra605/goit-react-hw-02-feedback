@@ -1,8 +1,7 @@
-import './App.css';
-import SectionFeedback from './component/SectionFeedback';
+import Section from './component/SectionFeedback';
 
 function App() {
-  return <SectionFeedback title="Please leave feedback" />;
+  return <Section title="Please leave feedback" />;
 }
 
 export default App;

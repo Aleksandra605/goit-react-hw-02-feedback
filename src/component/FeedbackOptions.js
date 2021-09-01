@@ -1,9 +1,13 @@
-export default function FeedbackOptions() {
+export default function FeedbackOptions({
+  onLeaveGoodFB,
+  onLeaveNeutralFB,
+  onLeaveBadFB,
+}) {
   return (
     <div>
-      <button>Good</button>
-      <button>Neutral</button>
-      <button>Bad</button>
+      <button onClick={onLeaveGoodFB}>Good</button>
+      <button onClick={onLeaveNeutralFB}>Neutral</button>
+      <button onClick={onLeaveBadFB}>Bad</button>
     </div>
   );
 }
