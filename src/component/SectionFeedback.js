@@ -1,21 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics';
 import Notification from './Notification';
 
 class Section extends React.Component {
-  // countTotalFeedback = () => {
-  //   let total = this.state.good + this.state.bad + this.state.neutral;
-  //   console.log(total);
-  //   return total;
-  // };
-
-  // countPositiveFeedbackPercentage = () => {
-  //   let percentage = Math.round(
-  //     (this.state.good / this.countTotalFeedback()) * 100,
-  //   );
-  //   return percentage;
-  // };
+  static propTypes = {
+    title: PropTypes.string,
+  };
 
   render() {
     let {
@@ -46,8 +38,6 @@ class Section extends React.Component {
             bad={bad}
             total={total}
             percentage={percentage}
-            // total={this.countTotalFeedback()}
-            // percentage={this.countPositiveFeedbackPercentage()}
           />
         )}
       </section>
