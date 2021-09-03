@@ -29,7 +29,7 @@ class Section extends React.Component {
           onLeaveNeutralFB={countNeutralFB}
           onLeaveBadFB={countBadFB}
         />
-        {this.props.total === 0 ? (
+        {total === 0 ? (
           <Notification message="No feedback given" />
         ) : (
           <Statistics
