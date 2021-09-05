@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import Section from './component/SectionFeedback';
 import PropTypes from 'prop-types';
 

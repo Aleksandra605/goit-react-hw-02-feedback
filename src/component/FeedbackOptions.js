@@ -1,3 +1,5 @@
+import s from './component.module.css';
+
 export default function FeedbackOptions({
   onLeaveGoodFB,
   onLeaveNeutralFB,
@@ -5,9 +7,15 @@ export default function FeedbackOptions({
 }) {
   return (
     <div>
-      <button onClick={onLeaveGoodFB}>Good</button>
-      <button onClick={onLeaveNeutralFB}>Neutral</button>
-      <button onClick={onLeaveBadFB}>Bad</button>
+      <button onClick={onLeaveGoodFB} className={s.good}>
+        Good
+      </button>
+      <button onClick={onLeaveNeutralFB} className={s.neutral}>
+        Neutral
+      </button>
+      <button onClick={onLeaveBadFB} className={s.bad}>
+        Bad
+      </button>
     </div>
   );
 }

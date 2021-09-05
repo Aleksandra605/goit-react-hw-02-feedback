@@ -1,0 +1,71 @@
+.section {
+  margin: 20px;
+  padding: 20px;
+  width: 240px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  /* width: 240px; */
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.good {
+  cursor: pointer;
+  margin-right: 10px;
+  font-family: 'Nunito', sans-serif;
+  background-color: transparent;
+  border: none;
+  height: 25px;
+  width: 60px;
+  box-shadow: rgba(8, 95, 42, 0.3) 0px 1px 2px 0px,
+    rgba(20, 136, 59, 0.15) 0px 2px 6px 2px;
+  color: rgb(128, 126, 126);
+}
+
+.good:hover,
+.good:focus {
+  color: rgb(20, 177, 20);
+}
+
+.bad {
+  cursor: pointer;
+  margin-right: 10px;
+  font-family: 'Nunito', sans-serif;
+  background-color: transparent;
+  border: none;
+  height: 25px;
+  width: 60px;
+  box-shadow: rgba(136, 16, 22, 0.3) 0px 1px 2px 0px,
+    rgba(150, 18, 29, 0.15) 0px 2px 6px 2px;
+  color: rgb(128, 126, 126);
+}
+
+.bad:hover,
+.bad:focus {
+  color: rgb(236, 22, 57);
+}
+
+.neutral {
+  cursor: pointer;
+  margin-right: 10px;
+  font-family: 'Nunito', sans-serif;
+  background-color: transparent;
+  border: none;
+  height: 25px;
+  width: 60px;
+  box-shadow: rgba(13, 72, 128, 0.3) 0px 1px 2px 0px,
+    rgba(18, 80, 150, 0.15) 0px 2px 6px 2px;
+  color: rgb(128, 126, 126);
+}
+
+.neutral:hover,
+.neutral:focus {
+  color: rgb(29, 136, 207);
+}

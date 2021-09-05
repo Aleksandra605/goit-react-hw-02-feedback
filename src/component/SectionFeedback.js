@@ -1,3 +1,4 @@
+import s from './component.module.css';
 import React from 'react';
 import PropTypes from 'prop-types';
 import FeedbackOptions from './FeedbackOptions';
@@ -22,7 +23,7 @@ class Section extends React.Component {
       percentage,
     } = this.props;
     return (
-      <section>
+      <section className={s.section}>
         <h2>{title}</h2>
         <FeedbackOptions
           onLeaveGoodFB={countGoodFB}
