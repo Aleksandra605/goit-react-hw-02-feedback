@@ -1,4 +1,5 @@
 import s from './component.module.css';
+import PropTypes from 'prop-types';
 
 export default function FeedbackOptions({
   onLeaveGoodFB,
@@ -19,3 +20,9 @@ export default function FeedbackOptions({
     </div>
   );
 }
+
+FeedbackOptions.propTypes = {
+  onLeaveGoodFB: PropTypes.func,
+  onLeaveNeutralFB: PropTypes.func,
+  onLeaveBadFB: PropTypes.func,
+};
