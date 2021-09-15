@@ -34,25 +34,10 @@ class App extends React.Component {
     }));
   };
 
-  // countTotalFeedback = () => {
-  //   let total = this.state.good + this.state.bad + this.state.neutral;
-  //   console.log(total);
-  //   return total;
-  // };
-
-  // countPositiveFeedbackPercentage = () => {
-  //   let percentage = Math.round(
-  //     (this.state.good / this.countTotalFeedback()) * 100,
-  //   );
-  //   return percentage;
-  // };
-
   render() {
     let { good, neutral, bad } = this.state;
     let total = good + bad + neutral;
     let percentage = Math.round((good / total) * 100);
-    // total={this.countTotalFeedback()}
-    // percentage={this.countPositiveFeedbackPercentage()}
 
     return (
       <Section
